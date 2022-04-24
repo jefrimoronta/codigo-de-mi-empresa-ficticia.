@@ -11,14 +11,15 @@ Proceso Programa_control_venta
 	Borrar Pantalla;
 	// cuerpo del programa
 	Definir cant,uni,sub,total,c,actura,CON Como Entero;
-	Definir noseguir,articulo Como Caracter;
+	Definir noseguir,articulo,fecha Como Caracter;
 	CON <- 0;
 	total <- 0;
 	c <- 0;
 	// Encabezado de la factura
+	Escribir "Escribir fecha de hoy";
+	Leer fecha;
 	Repetir
 		Escribir '==============!!!!Bienvenido!!!!==============================';
-		Escribir '';
 		Repetir
 			Escribir 'Nombre Articulo:';
 			Leer articulo;
@@ -38,11 +39,12 @@ Proceso Programa_control_venta
 		Escribir 'Ud Compro ',c,' Productos';
 		Borrar Pantalla;
 		
+		
 		Escribir '                         Mary Dulces Y Postres                ';
 		Escribir '     Lotes y Servicios, Calle 4, Sabana Perdida, Republica Dominicana ';
 		Escribir '                    Telefono/WhatsApp: 849-024-0222                   ';
 		Escribir '                                                                      ';
-		Escribir 'Fecha: 25/04/2022                                                     ';
+		Escribir 'Fecha:', fecha;
 		Escribir '====================================================================  ';
 		Escribir '  Cantidad de articulos en el dia vendidos        Total de lo vendido del dia   ';
 		Escribir '====================================================================  ';
@@ -58,5 +60,8 @@ Proceso Programa_control_venta
 		Leer cerrar;
 		Borrar Pantalla;
 	Hasta Que cerrar="n"
+	Escribir "";
+	Escribir "Jefri Antonio Moronta la Paz  21-EIEN-1-022";
+	Escribir "";
 	Escribir "Adios!!!";
 FinProceso
