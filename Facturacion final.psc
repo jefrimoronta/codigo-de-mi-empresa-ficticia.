@@ -1,11 +1,11 @@
-Proceso sin_titulo
-	// Inicio de usuario y contraseña
+Proceso Programa_control_venta
+	// Inicio de usuario y contraseÃ±a
 	definir cerrar como caracter;
 	Definir us,co Como Caracter;
 	Repetir
 		Escribir 'Bienvenido a Mary Delicias... Por favor escribir su Usuario';
 		Leer us;
-		Escribir 'Escribir contraseña';
+		Escribir 'Escribir contraseÃ±a';
 		Leer co;
 	Hasta Que us='gerente01' Y co='oym12345'
 	Borrar Pantalla;
